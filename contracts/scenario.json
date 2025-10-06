@@ -1,0 +1,85 @@
+{
+  "accounts": {
+    "account{0}": "0xa3aAa3150281b7608b58139aFD3B12A961AbCD45"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1759565129502,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0xa6bcf29ce4cd3b001badd1b115259877e412cb50f93ec27c3885471a1fdf6206",
+        "contractName": "BasicMath",
+        "bytecode": "608060405234801561000f575f80fd5b506102b18061001d5f395ff3fe608060405234801561000f575f80fd5b5060043610610034575f3560e01c806306b034e9146100385780635270312a14610069575b5f80fd5b610052600480360381019061004d919061015a565b61009a565b6040516100609291906101c1565b60405180910390f35b610083600480360381019061007e919061015a565b6100f4565b6040516100919291906101c1565b60405180910390f35b5f80837fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6100c89190610215565b8311156100db575f6001915091506100ed565b82846100e79190610248565b5f915091505b9250929050565b5f808383111561010a575f60019150915061011c565b82846101169190610215565b5f915091505b9250929050565b5f80fd5b5f819050919050565b61013981610127565b8114610143575f80fd5b50565b5f8135905061015481610130565b92915050565b5f80604083850312156101705761016f610123565b5b5f61017d85828601610146565b925050602061018e85828601610146565b9150509250929050565b6101a181610127565b82525050565b5f8115159050919050565b6101bb816101a7565b82525050565b5f6040820190506101d45f830185610198565b6101e160208301846101b2565b9392505050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b5f61021f82610127565b915061022a83610127565b9250828203905081811115610242576102416101e8565b5b92915050565b5f61025282610127565b915061025d83610127565b9250828201905080821115610275576102746101e8565b5b9291505056fea264697066735822122034ba4f98b1d64fff13ad001024d61e97a457d229c4adc2a9e64b06160f03366b64736f6c63430008140033",
+        "linkReferences": {},
+        "from": "account{0}"
+      }
+    }
+  ],
+  "abis": {
+    "0xa6bcf29ce4cd3b001badd1b115259877e412cb50f93ec27c3885471a1fdf6206": [
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_a",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_b",
+            "type": "uint256"
+          }
+        ],
+        "name": "adder",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "sum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "error",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_a",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_b",
+            "type": "uint256"
+          }
+        ],
+        "name": "subtractor",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "difference",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "error",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+      }
+    ]
+  }
+}

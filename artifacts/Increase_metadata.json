@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "increment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "storedInteger",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/increment.sol": "Increase"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/increment.sol": {
+			"keccak256": "0x2181d3b3d1913718029a9722d8393f9feffd22537185da339c5e084c565e7c1b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7bcdd2b4fc1e6c89bc4b764fcd21ebba16aba73f208cea4bf17e396c92c8e5ff",
+				"dweb:/ipfs/Qmdzo72zccV3zutPTYaXeSuFdraBZMwzptUvVBwcbs6mkQ"
+			]
+		}
+	},
+	"version": 1
+}

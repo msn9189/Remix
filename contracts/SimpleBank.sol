@@ -15,4 +15,9 @@ contract SimpleBank{
     _;
   }
 
+  function deposit() external payable {
+    require(msg.value > 0, "Amount must be greater than 0");
+    balances[msg.sender] += msg.value;
+  }
+
 }

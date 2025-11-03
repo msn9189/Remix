@@ -20,4 +20,10 @@ contract SimpleBank{
     balances[msg.sender] += msg.value;
   }
 
+  function withdraw(uint amount) external {
+    require(balances[msg.sender] >= amount, "Insufficient balance");
+    balances[msg.sender] -= amount;
+    payable(msg.sender).transfer(amount);
+  }
+
 }

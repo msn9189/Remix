@@ -6,4 +6,8 @@ contract SimpleBank{
   mapping(address => uint) private balances;
   address public owner;
 
+  constructor() {
+    owner = msg.sender;
+  }
+
 }

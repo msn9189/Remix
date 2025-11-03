@@ -30,4 +30,8 @@ contract SimpleBank{
     return balances[msg.sender];
   }
 
+  function getTotalBankBalance() external view onlyOwner returns (uint256) {
+    return address(this).balance;
+  }
+
 }

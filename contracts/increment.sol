@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.18;
+pragma solidity ^0.8.18;
 
-contract Increase {
+contract increment {
     uint256 public storedInteger;
 
-    function increment() public {
+    function increase() public {
         storedInteger += 1;
     }
 }

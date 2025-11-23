@@ -1,20 +1,46 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "by",
+						"type": "uint256"
+					}
+				],
+				"name": "Increment",
+				"type": "event"
+			},
+			{
 				"inputs": [],
-				"name": "increment",
+				"name": "inc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "by",
+						"type": "uint256"
+					}
+				],
+				"name": "incBy",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "storedInteger",
+				"name": "x",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -39,9 +65,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/increment.sol": "Increase"
+			"contracts/Increase.sol": "Increase"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -53,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/increment.sol": {
-			"keccak256": "0x2181d3b3d1913718029a9722d8393f9feffd22537185da339c5e084c565e7c1b",
+		"contracts/Increase.sol": {
+			"keccak256": "0xd492f9cf892860bf736b8cf5e80de308e101cc07f846e29e1ed6b0c0ba764c5a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7bcdd2b4fc1e6c89bc4b764fcd21ebba16aba73f208cea4bf17e396c92c8e5ff",
-				"dweb:/ipfs/Qmdzo72zccV3zutPTYaXeSuFdraBZMwzptUvVBwcbs6mkQ"
+				"bzz-raw://c11658634c7304e8471ef179b2eee81cd00c60b4b5793af0003485fb2b89375f",
+				"dweb:/ipfs/QmPj7grc9Wn9LW6ZzKa5VDtqvBTHh7DjR7hnTmqC3YJJLU"
 			]
 		}
 	},

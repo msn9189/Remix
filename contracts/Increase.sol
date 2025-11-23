@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-contract Counter {
+contract Increase {
   uint public x;
 
   event Increment(uint by);

@@ -84,7 +84,7 @@ contract Hourly is Employee {
  * @title Manager
  * @dev Contract managing a list of employee IDs.
  */
-contract Manager {
+abstract contract Manager {
     uint[] public employeeIds; // List of employee IDs
 
     /**

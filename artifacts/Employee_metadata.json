@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -76,7 +76,7 @@
 		"compilationTarget": {
 			"contracts/Inheritance.sol": "Employee"
 		},
-		"evmVersion": "london",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -89,11 +89,11 @@
 	},
 	"sources": {
 		"contracts/Inheritance.sol": {
-			"keccak256": "0x010b0b3e80d0707cdea34e2e486463ef32adf764a2fb1e8fe642bb1bf9131937",
+			"keccak256": "0xa175ae09c0fb53623995e98b7f014500ef6cdce5c33c0b3bdaba9f7f2017bb8b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://69295dd74ac45b14ef71ecf7beaa28c7baf5576bb65063909a6f9b8c08c82e53",
-				"dweb:/ipfs/QmRj4uigKqzq1rH64mS3m7jYinUhwLhPjPEpvMAZq2Rx6U"
+				"bzz-raw://1b8af4fa83702a4ac00a9495762e9b0d87aba0b4ea9e631302d7ef2e9845ae24",
+				"dweb:/ipfs/QmYRupuq46AsFR2uYUi76NiX8X2kaXp2yMRupkZ2WgeFxj"
 			]
 		}
 	},

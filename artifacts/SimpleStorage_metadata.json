@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -60,7 +60,7 @@
 		"compilationTarget": {
 			"contracts/simplestorage.sol": "SimpleStorage"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -73,11 +73,11 @@
 	},
 	"sources": {
 		"contracts/simplestorage.sol": {
-			"keccak256": "0xc416be8acd2fc0f8c585bfbc5365940163e31c64f76e3f0279c5144a30b78387",
+			"keccak256": "0xfee322a97eab75380583329fa0435e4a518f88dfa6852e2282ea0b449c021685",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6d23aa00404c973ff609a34edebadb292bc58bf8219262114e23da1459184311",
-				"dweb:/ipfs/QmRwVFSE3YqKYGX43JCkHe9NS6FaLh7TcwVghRy4S3V5mh"
+				"bzz-raw://5f0058a0036cc068a62cfa8c3b2940e418e0612bc68f6d611ceaa1db020edfe7",
+				"dweb:/ipfs/QmQzTffRKq4H2MDq2KFF3eSha1KQE2sY8WkuyBv9YL5MSZ"
 			]
 		}
 	},

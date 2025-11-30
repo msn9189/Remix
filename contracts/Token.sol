@@ -40,7 +40,7 @@ contract Token {
      * the `external` modifier makes a function *only* callable from *outside*
      * the contract.
      */
-    function transfer(address to, uint256 amount) external {
+    function transfer(address to, uint256 amount) public {
         // Check if the transaction sender has enough tokens.
         // If `require`'s first argument evaluates to `false`,
         // the transaction will revert.

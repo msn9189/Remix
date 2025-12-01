@@ -26,4 +26,12 @@ contract MiniBaseName {
         if (msg.value > PRICE)
             payable(msg.sender).transfer(msg.value - PRICE);
     }
+
+    function setAddr(string calldata name, address newAddr) external {
+        require(nameToAddr[name] == msg.sender, "Not owner");
+        addrToName[msg.sender] = "";        
+        nameToAddr[name] = newAddr;
+        addrToName[newAddr] = name;
+
+    }
 }

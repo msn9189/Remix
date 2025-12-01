@@ -34,4 +34,8 @@ contract MiniBaseName {
         addrToName[newAddr] = name;
 
     }
+
+     function resolve(string calldata name) external view returns (address) {
+        return nameToAddr[name];
+    }
 }

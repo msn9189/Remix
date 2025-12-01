@@ -27,6 +27,10 @@
 		"Custom": {
 			"linkReferences": {},
 			"autoDeployLib": true
+		},
+		"sepolia:11155111": {
+			"linkReferences": {},
+			"autoDeployLib": true
 		}
 	},
 	"data": {

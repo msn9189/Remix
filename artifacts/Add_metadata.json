@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "increase",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "storedInteger",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Add.sol": "Add"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Add.sol": {
+			"keccak256": "0xa79f0b1fc311162a422a822a64c014b25f751da53d2fb0317cd723424f030ff6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://15a688b853d8903c4abaa69e7681876eb8192a67407963771c77f70d07b61036",
+				"dweb:/ipfs/QmUtNdEtgS4YbzHvnkeaG5j8y8dgcuFjDAS9XyEzUBhkDG"
+			]
+		}
+	},
+	"version": 1
+}

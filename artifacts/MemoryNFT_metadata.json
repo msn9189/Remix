@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
@@ -85,7 +85,7 @@
 		"compilationTarget": {
 			"contracts/MemoryNft.sol": "MemoryNFT"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -98,11 +98,11 @@
 	},
 	"sources": {
 		"contracts/MemoryNft.sol": {
-			"keccak256": "0x0df48407a5546141b9a72334f091aa8815d6035effa77cd7f10f32f9a51448f5",
+			"keccak256": "0x7f77959d9ba6d0d00819ad2fe5cd123a6bc836c7eca3f32aebb5371775e1f319",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://de0c4883152391b783efff97099bb29ed01a8a91d4d8b120b25e2b9f444975d5",
-				"dweb:/ipfs/QmP4soSRCJfmYY6gUfrWYNtuNLMJPTAhofzfb8bczyeieC"
+				"bzz-raw://f41fc4f335f2511c64dab54055ed6c2cf69bd19c01ff66b026a8ba9c6d12c70f",
+				"dweb:/ipfs/QmbbpbtvmvT75BQfvtWaCJcztPZUPYTkx6CAKgrZAG8Qrs"
 			]
 		}
 	},

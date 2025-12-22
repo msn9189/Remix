@@ -20,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "dec",
+				"name": "decrease",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -40,7 +40,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "inc",
+				"name": "inccrease",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -74,11 +74,11 @@
 	},
 	"sources": {
 		"contracts/Count.sol": {
-			"keccak256": "0xf9750459a4e87d6974c9301738c4695c2a31544b66d7a86065648de03a1ba517",
+			"keccak256": "0x5f4425d5654d2eff9c9c720900c7c5e36cd4919ffd8991790e4dff805ee9e92f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d21eb9b16e4a8d6562dccd39096893b9fa8776f2ea4e92d16ac50833b1ce777c",
-				"dweb:/ipfs/QmTpJ1yEBmNPvLDcEugJQHxwG2t5YbYWpKRczyepQGtBmH"
+				"bzz-raw://6e286abee66fa2a067b328e54f7ea61bac3c2064a675859f2568d9d124091b46",
+				"dweb:/ipfs/QmV4cDjTXnKmeATcQtEqqEY4bRcQDXgbidCdMfo8d669ij"
 			]
 		}
 	},

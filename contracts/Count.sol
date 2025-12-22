@@ -10,12 +10,12 @@ contract Change {
     }
 
     //Function to increment count by 1 
-    function inc() public {
+    function inccrease() public {
         count += 1;
     }
 
     //Function to decrement count by 1 
-    function dec() public {
+    function decrease() public {
         //This function will fail if count = 0. Be aware
         count -= 1;
     }

@@ -92,11 +92,12 @@ contract MultiSigWallet {
             emit SubmitTransaction(msg.sender, txIndex, _to, _value, _data);
     }
 
-    function confirmTransaction(address _to, uint256 _value, bytes memory _data)
-        public 
-        onlyOwner
-    {
+    function confirmTransaction(uint256 _txIndex) public onlyOwner txExists(_txIndex) notExecuted(_txIndex) notConfirmed(_txIndex) {
+        Transaction storage transaction = transactions[_txIndex];
+        transaction.numConfirmations += 1;
+        isConfirmed[_txIndex][msg.sender] = true;
 
+        emit ConfirmTransaction(msg.sender, _txIndex);
     }
 
 

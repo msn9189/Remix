@@ -41,4 +41,9 @@ contract MultiSigWallet {
         _;
     }
 
+    modifier notExecuted(uint256 _txIndex) {
+        require(!transactions[_txIndex].executed, "tx already executed");
+        _;
+    }
+
 }

@@ -143,7 +143,15 @@ contract MultiSigWallet {
         bool executed,
         uint256 numConfirmations
     ){
-        
+        Transaction storage transaction = transactions[_txIndex];
+
+        return (
+            transaction.to,
+            transaction.value,
+            transaction.data,
+            transaction.executed,
+            transaction.numConfirmations
+        );
     }
 
 

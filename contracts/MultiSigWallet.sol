@@ -46,4 +46,9 @@ contract MultiSigWallet {
         _;
     }
 
+    modifier notConfirmed(uint256 _txIndex) {
+        require(!isConfirmed[_txIndex][msg.sender], "tx already confirmed");
+        _;
+    }
+
 }

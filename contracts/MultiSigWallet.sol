@@ -36,4 +36,9 @@ contract MultiSigWallet {
         _;
     }
 
+    modifier txExists(uint256 _txIndex) {
+        require(_txIndex < transactions.length, "tx does not exist");
+        _;
+    }
+
 }

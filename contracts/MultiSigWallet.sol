@@ -29,5 +29,7 @@ contract MultiSigWallet {
 
     mapping(uint256 => mapping(address => bool)) public isConfirmed;
 
+    Transaction[] public transactions;
+    
 
 }

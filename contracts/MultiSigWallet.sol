@@ -76,11 +76,8 @@ contract MultiSigWallet {
         emit Deposit(msg.sender, msg.value, address(this).balance);
     }
 
-    function submitTransaction(address _to, uint256 _value, bytes memory _data)
-        public
-        onlyOwner
-     {
-            uint256 txIndex = transactions.length;
+    function submitTransaction(address _to, uint256 _value, bytes memory _data) public onlyOwner {
+         uint256 txIndex = transactions.length;
 
             transactions.push(
                 Transaction({
@@ -92,11 +89,18 @@ contract MultiSigWallet {
                 })
             );
 
-        emit SubmitTransaction(msg.sender, txIndex, _to, _value, _data);
-     }
+            emit SubmitTransaction(msg.sender, txIndex, _to, _value, _data);
+    }
+
+    function confirmTransaction(address _to, uint256 _value, bytes memory _data)
+        public 
+        onlyOwner
+    {
+
+    }
 
 
-     
+
 
 
 }

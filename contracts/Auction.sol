@@ -17,4 +17,7 @@ contract Auction {
     uint256 public nftId;
 
     address payable public seller;
+    uint256 public endAt;
+    bool public started;
+    bool public ended;
 }

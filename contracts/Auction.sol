@@ -69,6 +69,18 @@ contract Auction {
     }
 
     function end() external {
-        
+       require(started, "not started");
+        require(block.timestamp >= endAt, "not ended");
+        require(!ended, "ended");
+
+        ended = true;
+        if (highestBidder != address(0)) {
+            nft.safeTransferFrom(address(this), highestBidder, nftId);
+            seller.transfer(highestBid);
+        } else {
+            nft.safeTransferFrom(address(this), seller, nftId);
+        }
+
+        emit End(highestBidder, highestBid); 
     }
 }

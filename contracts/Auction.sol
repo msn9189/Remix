@@ -59,4 +59,8 @@ contract Auction {
 
         emit Bid(msg.sender, msg.value);
     }
+
+    function withdraw() external {
+        
+    }
 }

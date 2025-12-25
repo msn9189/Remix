@@ -20,4 +20,7 @@ contract Auction {
     uint256 public endAt;
     bool public started;
     bool public ended;
+
+    address public highestBidder;
+    uint256 public highestBid;
 }

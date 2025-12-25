@@ -70,16 +70,17 @@ contract Auction {
     }
 
     function end() external {
-       require(started, "not started");
-        require(block.timestamp >= endAt, "not ended");
-        require(!ended, "ended");
+       require(block.timestamp >= endAt, "Auction not ended");
+        require(!ended, "Auction already ended");
 
         ended = true;
+
         if (highestBidder != address(0)) {
-            nft.safeTransferFrom(address(this), highestBidder, nftId);
-            seller.transfer(highestBid);
+            IERC721(nft).safeTransferFrom(address(this), highestBidder, nftId);
+            (bool success, ) = payable(seller).call{value: highestBid}("");
+            require(success, "Transfer failed");
         } else {
-            nft.safeTransferFrom(address(this), seller, nftId);
+            IERC721(nft).safeTransferFrom(address(this), seller, nftId);
         }
 
         emit End(highestBidder, highestBid); 

@@ -67,4 +67,8 @@ contract Auction {
 
         emit Withdraw(msg.sender, bal);
     }
+
+    function end() external {
+        
+    }
 }

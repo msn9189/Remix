@@ -8,5 +8,8 @@ interface IERC721 {
 }
 
 contract Auction {
-    
+    event Start();
+    event Bid(address indexed sender, uint256 amount);
+    event Withdraw(address indexed bidder, uint256 amount);
+    event End(address winner, uint256 amount);
 }

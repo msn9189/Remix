@@ -26,4 +26,11 @@ contract Auction {
 
     mapping(address => uint256) public bids;
 
+    constructor(address _nft, uint256 _nftId, uint256 _startingBid) {
+        nft = IERC721(_nft);
+        nftId = _nftId;
+
+        seller = payable(msg.sender);
+        highestBid = _startingBid;
+    }
 }

@@ -45,5 +45,7 @@ contract Auction {
         emit Start();
     }
 
-    
+    function bid() external payable {
+        
+    }
 }

@@ -6,3 +6,7 @@ interface IERC721 {
         external;
     function transferFrom(address, address, uint256) external;
 }
+
+contract Auction {
+    
+}

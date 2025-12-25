@@ -12,4 +12,9 @@ contract Auction {
     event Bid(address indexed sender, uint256 amount);
     event Withdraw(address indexed bidder, uint256 amount);
     event End(address winner, uint256 amount);
+
+    IERC721 public nft;
+    uint256 public nftId;
+
+    address payable public seller;
 }

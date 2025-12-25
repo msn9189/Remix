@@ -61,6 +61,10 @@ contract Auction {
     }
 
     function withdraw() external {
-        
+        uint256 bal = bids[msg.sender];
+        bids[msg.sender] = 0;
+        payable(msg.sender).transfer(bal);
+
+        emit Withdraw(msg.sender, bal);
     }
 }

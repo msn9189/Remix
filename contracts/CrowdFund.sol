@@ -7,5 +7,11 @@ interface IERC20 {
 }
 
 contract CrowdFund {
-    
+   event Launch(
+        uint256 id,
+        address indexed creator,
+        uint256 goal,
+        uint32 startAt,
+        uint32 endAt
+    ); 
 }

@@ -41,6 +41,9 @@ contract CrowdFund {
     // It is also used to generate id for new campaigns.
     uint256 public count;
 
-    
+    // Mapping from id to Campaign
+    mapping(uint256 => Campaign) public campaigns;
+    // Mapping from campaign id => pledger => amount pledged
+    mapping(uint256 => mapping(address => uint256)) public pledgedAmount;
 
 }

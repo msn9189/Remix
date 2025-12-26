@@ -78,7 +78,15 @@ contract CrowdFund {
     }
 
     function pledge(uint256 _id, uint256 _amount) external {
-        
+        Campaign storage campaign = campaigns[_id];
+        require(block.timestamp >= campaign.startAt, "not started");
+        require(block.timestamp <= campaign.endAt, "ended");
+
+        campaign.pledged += _amount;
+        pledgedAmount[_id][msg.sender] += _amount;
+        token.transferFrom(msg.sender, address(this), _amount);
+
+        emit Pledge(_id, msg.sender, _amount);
     }
 
 

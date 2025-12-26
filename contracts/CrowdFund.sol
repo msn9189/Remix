@@ -21,5 +21,19 @@ contract CrowdFund {
     event Claim(uint256 id);
     event Refund(uint256 id, address indexed caller, uint256 amount);
 
+    struct Campaign {
+        // Creator of campaign
+        address creator;
+        // Amount of tokens to raise
+        uint256 goal;
+        // Total amount pledged
+        uint256 pledged;
+        // Timestamp of start of campaign
+        uint32 startAt;
+        // Timestamp of end of campaign
+        uint32 endAt;
+        // True if goal was reached and creator has claimed the tokens.
+        bool claimed;
+    }
 
 }

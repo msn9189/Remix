@@ -68,5 +68,9 @@ contract CrowdFund {
         emit Launch(count, msg.sender, _goal, _startAt, _endAt);
     }
 
+    function cancel(uint256 _id) external {
+        
+    }
+
 
 }

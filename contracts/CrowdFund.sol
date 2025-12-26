@@ -50,5 +50,9 @@ contract CrowdFund {
         token = IERC20(_token);
     }
 
+    function launch(uint256 _goal, uint32 _startAt, uint32 _endAt) external {
+        
+    }
+
 
 }

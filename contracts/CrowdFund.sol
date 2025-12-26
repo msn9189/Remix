@@ -14,4 +14,6 @@ contract CrowdFund {
         uint32 startAt,
         uint32 endAt
     ); 
+
+    event Cancel(uint256 id);
 }

@@ -100,5 +100,9 @@ contract CrowdFund {
         emit Unpledge(_id, msg.sender, _amount);
     }
 
+    function claim(uint256 _id) external {
+        
+    }
+
 
 }

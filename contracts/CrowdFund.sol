@@ -36,4 +36,11 @@ contract CrowdFund {
         bool claimed;
     }
 
+    IERC20 public immutable token;
+    // Total count of campaigns created.
+    // It is also used to generate id for new campaigns.
+    uint256 public count;
+
+    
+
 }

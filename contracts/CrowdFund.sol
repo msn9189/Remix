@@ -77,7 +77,9 @@ contract CrowdFund {
         emit Cancel(_id);
     }
 
-    
+    function pledge(uint256 _id, uint256 _amount) external {
+        
+    }
 
 
 }

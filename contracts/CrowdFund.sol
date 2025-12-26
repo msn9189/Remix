@@ -113,5 +113,17 @@ contract CrowdFund {
         emit Claim(_id);
     }
 
+    function refund(uint256 _id) external {
+        Campaign memory campaign = campaigns[_id];
+        require(block.timestamp > campaign.endAt, "not ended");
+        require(campaign.pledged < campaign.goal, "pledged >= goal");
+
+        uint256 bal = pledgedAmount[_id][msg.sender];
+        pledgedAmount[_id][msg.sender] = 0;
+        token.transfer(msg.sender, bal);
+
+        emit Refund(_id, msg.sender, bal);
+    }
+
 
 }

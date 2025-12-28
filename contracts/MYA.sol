@@ -62,5 +62,11 @@ contract MAYAERC20 is IERC20 {
        emit Transfer(address(0), msg.sender, amount);
    }
 
+   function burn(uint amount) external {
+       balanceOf[msg.sender] -= amount;
+       totalSupply -= amount;
+       emit Transfer(msg.sender, address(0), amount);
+   }
+
 
 }

@@ -23,3 +23,6 @@ interface IERC20 {
    event Approval(address indexed owner, address indexed spender, uint value);
 }
  
+contract MAYAERC20 is IERC20 {
+    
+}

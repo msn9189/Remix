@@ -202,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MYA.sol": "IERC20"
+			"contracts/MAYAERC20.sol": "IERC20"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -216,7 +216,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/MYA.sol": {
+		"contracts/MAYAERC20.sol": {
 			"keccak256": "0x71a0bbf9af8dc8f7d82e07ade1fe45307512e3e3f40443a0b5af916f250b3777",
 			"license": "MIT",
 			"urls": [

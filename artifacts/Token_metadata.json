@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
@@ -150,7 +150,7 @@
 		"compilationTarget": {
 			"contracts/Token.sol": "Token"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -163,19 +163,11 @@
 	},
 	"sources": {
 		"contracts/Token.sol": {
-			"keccak256": "0x2f014f7ab822b3abbbcd1d0ca1e1493eae597cb45e8e97068c46b7ce48981a07",
+			"keccak256": "0x4aed4496deafed8914f117b30818e3f196d441c67796634fc2a11c31ee019cc2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d1cacb46e883ce0d1b2459ca5a57d23112b8978500e1ac0a9ba5d54befeb9e9e",
-				"dweb:/ipfs/QmPd5oUQvnhe9ZPwovRA7a5cPtyb5ZCQ58cebW3zcedejj"
-			]
-		},
-		"hardhat/console.sol": {
-			"keccak256": "0xf2560b5386574153057104d19a9e68a32ee912cf23c0c8df1fe9a0607f42d543",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://a63166e036b040826baa513772451a79925daa304b38749100efb089ac07cdc2",
-				"dweb:/ipfs/QmUtMTxUFKU6a5oFXsEJnTPvb3QPb7GDDmSv5yZ1jFHDwR"
+				"bzz-raw://35df948331072426babddf6552adadbeb8e28bde375603a09481cdd36bcc2c11",
+				"dweb:/ipfs/QmamipMcXxQ6RDSzWwK3nFyhcFjKNgXDnDKDsTRvs5s8Sw"
 			]
 		}
 	},

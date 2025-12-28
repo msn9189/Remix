@@ -7,8 +7,8 @@ pragma solidity ^0.8.0;
 // This is the main building block for smart contracts.
 contract Token {
     // Some string type variables to identify the token.
-    string public name = "Nazi Token";
-    string public symbol = "MSN";
+    string public name = "Maya Token";
+    string public symbol = "MYA";
 
     // The fixed amount of tokens, stored in an unsigned integer type variable.
     uint public totalSupply = 1000000;

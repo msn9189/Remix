@@ -141,4 +141,20 @@ contract ERC721 is IERC721 {
             "unsafe recipient"
         );
     }
+
+    function safeTransferFrom(
+        address from,
+        address to,
+        uint256 id,
+        bytes calldata data
+    ) external {
+        transferFrom(from, to, id);
+
+        require(
+            to.code.length == 0
+                || IERC721Receiver(to).onERC721Received(msg.sender, from, id, data)
+                    == IERC721Receiver.onERC721Received.selector,
+            "unsafe recipient"
+        );
+    }
 }

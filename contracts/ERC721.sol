@@ -117,6 +117,17 @@ contract ERC721 is IERC721 {
     }
 
     function transferFrom(address from, address to, uint256 id) public {
-        
+        require(from == _ownerOf[id], "from != owner");
+        require(to != address(0), "transfer to zero address");
+
+        require(_isApprovedOrOwner(from, msg.sender, id), "not authorized");
+
+        _balanceOf[from]--;
+        _balanceOf[to]++;
+        _ownerOf[id] = to;
+
+        delete _approvals[id];
+
+        emit Transfer(from, to, id);
     }
 }

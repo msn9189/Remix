@@ -25,3 +25,7 @@ interface IERC20Permit {
         bytes32 s
     ) external; 
 }
+
+contract GaslessTokenTransfer {
+    
+}

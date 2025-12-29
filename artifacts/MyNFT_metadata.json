@@ -6,15 +6,90 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
 					},
 					{
+						"indexed": true,
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
 						"type": "uint256"
 					}
 				],
@@ -35,7 +110,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "balance",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -46,7 +121,20 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
 						"type": "uint256"
 					}
 				],
@@ -54,7 +142,7 @@
 				"outputs": [
 					{
 						"internalType": "address",
-						"name": "operator",
+						"name": "",
 						"type": "address"
 					}
 				],
@@ -65,12 +153,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "operator",
+						"name": "",
 						"type": "address"
 					}
 				],
@@ -88,8 +176,26 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
 						"type": "uint256"
 					}
 				],
@@ -118,7 +224,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "id",
 						"type": "uint256"
 					}
 				],
@@ -141,7 +247,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "id",
 						"type": "uint256"
 					},
 					{
@@ -164,7 +270,7 @@
 					},
 					{
 						"internalType": "bool",
-						"name": "_approved",
+						"name": "approved",
 						"type": "bool"
 					}
 				],
@@ -177,7 +283,7 @@
 				"inputs": [
 					{
 						"internalType": "bytes4",
-						"name": "interfaceID",
+						"name": "interfaceId",
 						"type": "bytes4"
 					}
 				],
@@ -189,7 +295,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -206,7 +312,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "id",
 						"type": "uint256"
 					}
 				],
@@ -229,7 +335,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ERC721.sol": "IERC721"
+			"contracts/ERC721.sol": "MyNFT"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},

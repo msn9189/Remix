@@ -72,4 +72,9 @@ contract ERC721 is IERC721 {
             return interfaceId == type(IERC721).interfaceId
             || interfaceId == type(IERC165).interfaceId;
         }
+    
+    function ownerOf(uint256 id) external view returns (address owner) {
+        owner = _ownerOf[id];
+        require(owner != address(0), "token doesn't exist");
+    }
 }

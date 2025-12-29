@@ -52,6 +52,16 @@ contract ERC721 is IERC721 {
     event ApprovalForAll(
         address indexed owner, address indexed operator, bool approved
     );
-    
-     
+
+     // Mapping from token ID to owner address
+    mapping(uint256 => address) internal _ownerOf;
+
+    // Mapping owner address to token count
+    mapping(address => uint256) internal _balanceOf;
+
+    // Mapping from token ID to approved address
+    mapping(uint256 => address) internal _approvals;
+
+    // Mapping from owner to operator approvals
+    mapping(address => mapping(address => bool)) public isApprovedForAll;
 }

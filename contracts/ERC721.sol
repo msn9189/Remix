@@ -7,3 +7,7 @@ interface IERC165 {
         view
         returns (bool);
 }
+
+interface IERC721 is IERC165 {
+    
+}

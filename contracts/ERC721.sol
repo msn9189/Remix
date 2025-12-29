@@ -69,6 +69,7 @@ contract ERC721 is IERC721 {
         external
         pure
         returns (bool) {
-            
+            return interfaceId == type(IERC721).interfaceId
+            || interfaceId == type(IERC165).interfaceId;
         }
 }

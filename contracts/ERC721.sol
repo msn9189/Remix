@@ -40,3 +40,8 @@ interface IERC721Receiver {
         bytes calldata data
     ) external returns (bytes4);
 }
+
+
+contract ERC721 is IERC721 {
+    
+}

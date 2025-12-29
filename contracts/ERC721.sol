@@ -180,3 +180,7 @@ contract ERC721 is IERC721 {
         emit Transfer(owner, address(0), id);
     }
 }
+
+contract MyNFT is ERC721 {
+    
+}

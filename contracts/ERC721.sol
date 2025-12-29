@@ -82,4 +82,11 @@ contract ERC721 is IERC721 {
         require(owner != address(0), "owner = zero address");
         return _balanceOf[owner];
     }
+
+    function setApprovalForAll(address operator, bool approved) external {
+        isApprovedForAll[msg.sender][operator] = approved;
+        emit ApprovalForAll(msg.sender, operator, approved);
+    }
+
+    
 }

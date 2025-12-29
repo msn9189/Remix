@@ -115,4 +115,8 @@ contract ERC721 is IERC721 {
                 || spender == _approvals[id]
         );
     }
+
+    function transferFrom(address from, address to, uint256 id) public {
+        
+    }
 }

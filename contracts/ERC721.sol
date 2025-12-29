@@ -104,4 +104,15 @@ contract ERC721 is IERC721 {
         require(_ownerOf[id] != address(0), "token doesn't exist");
         return _approvals[id];
     }
+
+    function _isApprovedOrOwner(address owner, address spender, uint256 id)
+        internal
+        view
+        returns (bool)
+    {
+        return (
+            spender == owner || isApprovedForAll[owner][spender]
+                || spender == _approvals[id]
+        );
+    }
 }

@@ -8,4 +8,6 @@ contract EtherWallet {
         owner = payable(msg.sender);
     }
 
+     receive() external payable {}
+
 }

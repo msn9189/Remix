@@ -4,9 +4,6 @@ pragma solidity ^0.8.26;
 contract practiceArray {
     //Several ways to initialize an array
     uint256[] public arr;
-    uint256[] public arr2 = [2,5,9];
-    // Fixed sized array, all elements initialize to 0
-    uint256[10] public myFixedArr;
 
     function get(uint256 i) public view returns (uint256) {
         return arr[i];

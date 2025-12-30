@@ -16,7 +16,7 @@ contract practiceArray {
         return arr;
     }
 
-    function push(uint256 i) public {
+    function pushElement(uint256 i) public {
         //Append to array
         //This will increase the array length by 1.
         arr.push(i);

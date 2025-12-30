@@ -5,7 +5,7 @@ contract practiceArray {
     //Several ways to initialize an array
     uint256[] public arr;
 
-    function get(uint256 i) public view returns (uint256) {
+    function getElement(uint256 i) public view returns (uint256) {
         return arr[i];
     }
 

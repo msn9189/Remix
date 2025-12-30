@@ -41,9 +41,4 @@ contract Array {
         // in this case 0
         delete arr[index];
     }
-
-    function examples() external {
-        // create array in memory, only fixed size can be created
-        uint[] memory a = new uint[](5);
-    }
 }

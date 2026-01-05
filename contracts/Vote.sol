@@ -12,4 +12,7 @@ contract Voting is Ownable {
         uint256 endTime;    
         bool executed;   
     }
+
+    Proposal[] public proposals;
+
 }

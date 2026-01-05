@@ -27,4 +27,8 @@ contract Voting is Ownable {
         address indexed voter,
         uint8 choice // 0 = Yes, 1 = No, 2 = Abstain
     );
+
+    function createProposal(string memory description, uint256 durationInSeconds) external onlyOwner {
+        
+    }
 }

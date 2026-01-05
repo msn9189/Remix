@@ -14,5 +14,5 @@ contract Voting is Ownable {
     }
 
     Proposal[] public proposals;
-
+    mapping(uint256 => mapping(address => bool)) public hasVoted;
 }

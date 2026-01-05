@@ -21,4 +21,10 @@ contract Voting is Ownable {
         string description,
         uint256 endTime
     );
+
+    event Voted(
+        uint256 indexed proposalId,
+        address indexed voter,
+        uint8 choice // 0 = Yes, 1 = No, 2 = Abstain
+    );
 }

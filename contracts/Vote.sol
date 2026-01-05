@@ -29,6 +29,20 @@ contract Voting is Ownable {
     );
 
     function createProposal(string memory description, uint256 durationInSeconds) external onlyOwner {
-        
+        require(durationInSeconds > 0, "Duration must be > 0");
+
+        uint256 proposalId = proposals.length;
+        proposals.push(
+            Proposal({
+                description: description,
+                yesVotes: 0,
+                noVotes: 0,
+                abstainVotes: 0,
+                endTime: block.timestamp + durationInSeconds,
+                executed: false
+            })
+        );
+
+        emit ProposalCreated(proposalId, description, block.timestamp + durationInSeconds);
     }
 }

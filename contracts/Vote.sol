@@ -45,4 +45,6 @@ contract Voting is Ownable {
 
         emit ProposalCreated(proposalId, description, block.timestamp + durationInSeconds);
     }
+
+    
 }

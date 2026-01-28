@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-contract SimpleStorage {
+contract Save {
     //starte variable to store a number
     uint256 public num;
 
